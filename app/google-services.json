@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "600346044022",
+    "project_id": "tspfirebase",
+    "storage_bucket": "tspfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600346044022:android:4e61c5227a9ab5a2c6e157",
+        "android_client_info": {
+          "package_name": "com.example.tsp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600346044022-q3409s4p9k4dq85kvtgr34j7li6j1v6v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tsp",
+            "certificate_hash": "4167a11bafe0df153b696ff93cb970e241553749"
+          }
+        },
+        {
+          "client_id": "600346044022-i17bb9gvv1lns95mg1mgcscu7tous3qh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARycNt54tvJMGAxwKrYX_1MUOi83JWmPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "600346044022-i17bb9gvv1lns95mg1mgcscu7tous3qh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

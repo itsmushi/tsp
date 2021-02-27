@@ -94,11 +94,13 @@ public class LoginActivity extends AppCompatActivity {
                                     throw task.getException();
                                 }  catch(FirebaseAuthInvalidCredentialsException e) {
                                     userPassword.setError(password);
-                                    Toast.makeText(LoginActivity.this, "Email or Password incorrect!",
-                                            Toast.LENGTH_SHORT).show();
+//                                    Toast.makeText(LoginActivity.this, "Email or Password incorrect!",
+//                                            Toast.LENGTH_SHORT).show();
                                 } catch (Exception e) {
 
                                 }
+                                Toast.makeText(LoginActivity.this, "Email or Password incorrect!",
+                                        Toast.LENGTH_SHORT).show();
                                 progressBar.dismiss();
 
                             }

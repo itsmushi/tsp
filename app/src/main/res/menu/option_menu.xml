@@ -8,6 +8,12 @@
         android:title="Find Friends"
         app:showAsAction="never"
         />
+
+    <item
+        android:id="@+id/crate_group_option"
+        android:title="Create Group"
+        app:showAsAction="never"
+        />
     <item
         android:id="@+id/settings_option"
         android:title="Settings"

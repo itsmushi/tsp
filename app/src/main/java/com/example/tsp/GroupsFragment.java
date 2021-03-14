@@ -1,5 +1,6 @@
 package com.example.tsp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -89,6 +91,16 @@ public class GroupsFragment extends Fragment {
 
              retrieveAndDisplayGroups();
 
+             list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                 @Override
+                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                     String currentGroupName=parent.getItemAtPosition(position).toString();
+                     Intent groupChatIntent=new Intent(getContext(),GroupChatActivity.class);
+                     groupChatIntent.putExtra("GroupName",currentGroupName);
+                     startActivity(groupChatIntent);
+                 }
+             });
+
         return groupFragmentView;
     }
 
@@ -100,14 +112,14 @@ public class GroupsFragment extends Fragment {
                 Iterator iterator=snapshot.getChildren().iterator();
 
                 while (iterator.hasNext()){
-                    Log.d("tsp","here26");
+
                     set.add( ((DataSnapshot)iterator.next()).getKey() );
                 }
 
                 list_of_groups.clear();
                 list_of_groups.addAll(set);
                 arrayAdapter.notifyDataSetChanged();
-                Log.d("tsp","here27");
+
             }
 
             @Override

@@ -147,8 +147,6 @@ public class MainActivity extends AppCompatActivity {
             sendUserToSettingActivity();
         }
         if(item.getItemId()==R.id.find_friends_option){
-            Intent intent =new Intent(this,GroupChatActivity.class);
-            startActivity(intent);
 
         }
         if(item.getItemId()==R.id.crate_group_option){

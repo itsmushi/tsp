@@ -32,6 +32,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:20.0.2'
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-database:16.0.4'
+    // FirebaseUI for Firebase Realtime Database
+    implementation 'com.firebaseui:firebase-ui-database:7.1.1'
+
     implementation 'com.google.firebase:firebase-storage:16.0.4'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'

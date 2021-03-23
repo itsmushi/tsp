@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_profile_image"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/profile_image"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:id="@+id/user_profile_name"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                android:text="username"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:id="@+id/user_online_status"
+                android:layout_height="15dp"
+                android:src="@drawable/online"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:layout_width="200dp"
+            android:id="@+id/user_profile_status"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+
+
+            android:text="user status"/>
+
+
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

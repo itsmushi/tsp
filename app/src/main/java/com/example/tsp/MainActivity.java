@@ -144,9 +144,12 @@ public class MainActivity extends AppCompatActivity {
             sendUserToLoginActivity();
         }
         if(item.getItemId()==R.id.settings_option){
-            sendUserToSettingActivity();
+            //sendUserToSettingActivity();
+            Intent settingActivity=new Intent(this, SettingsActivity.class);
+            startActivity(settingActivity);
         }
         if(item.getItemId()==R.id.find_friends_option){
+            sendUserToFindFriendsActivity();
 
         }
         if(item.getItemId()==R.id.crate_group_option){
@@ -154,6 +157,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void sendUserToFindFriendsActivity() {
+        Intent FindFriendsActivity=new Intent(this, FindFriendsActivity.class);
+        startActivity(FindFriendsActivity);
+
     }
 
     private void requestNewGroup() {
